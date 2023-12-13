@@ -1,0 +1,157 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: 0.3s;
+}
+
+.header.sticky {
+  background: #081b29;
+}
+
+.logo {
+  position: relative;
+  font-size: 2.5rem;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+.navbar a {
+  font-size: 1.7rem;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: 0.3s;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: #00abf0;
+}
+#menu-icon {
+  position: relative;
+  font-size: 3.6rem;
+  color: #ededed;
+  cursor: pointer;
+  display: none;
+}
+
+.animate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  z-index: 98;
+}
+.logo .animate,
+.navbar .animate {
+  animation: showRight 1s ease forwards;
+  animation-delay: calc(0.3s * var(--i));
+}
+img.lang {
+  width: 25px;
+  cursor: pointer;
+}
+button.lang {
+  background: transparent;
+  margin-left: 3.5rem;
+  transition: 0.3s;
+}
+.flag-icon-container {
+  display: inline-block; /* Permite ajustar el contenedor como un bloque en línea */
+  vertical-align: middle; /* Ajusta la alineación vertical al centro */
+  /* Ajusta el margen derecho según sea necesario */
+}
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 4%;
+    background: #081b29;
+  }
+}
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  button.lang {
+    position: fixed;
+    top: 2.2rem;
+    right: 10rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 1rem 4%;
+    background: #00abf0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: 0.25s ease;
+    transition-delay: 0.25s;
+  }
+  .navbar.active {
+    left: 0;
+    transition-delay: 0s;
+    gap: 10px;
+  }
+  .navbar .active-nav {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transition: 0.25s ease;
+    transition-delay: 0s;
+  }
+  .navbar.active .active-nav {
+    left: 0;
+    transition-delay: 0.25s;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    transform: translateX(-20rem);
+    transition: 0.25s ease;
+    transition-delay: 0s;
+  }
+  .navbar.active a {
+    transform: translateX(0);
+    transition-delay: 0.25s;
+  }
+}

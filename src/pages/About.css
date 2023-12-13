@@ -1,0 +1,237 @@
+.about {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: #081b29;
+  padding-bottom: 6rem;
+}
+.heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+
+  text-align: center;
+}
+span {
+  color: #00abf0;
+}
+.about-img {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-img img {
+  width: 90%;
+  border-radius: 50%;
+  border: 0.2rem solid #00abf0;
+}
+.about-img .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.2rem solid #081b29;
+  border-bottom: 0.2rem solid #081b29;
+  border-left: 0.2rem solid #00abf0;
+  border-right: 0.2rem solid #00abf0;
+  animation: aboutSpinner 8s linear infinite;
+}
+.about-content {
+  text-align: center;
+}
+.about-content h3 {
+  font-size: 3rem;
+}
+h2.heading {
+  color: #00abf0;
+}
+.about-content p {
+  font-size: 2rem;
+  margin: 2rem 10rem 3rem;
+}
+.btn-box.btns {
+  display: inline-block;
+  width: 15rem;
+}
+.btn-box.btns a::before {
+  background: #081b29;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  padding-bottom: 5rem;
+}
+.education .education-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.education-row .education-column {
+  flex: 1 1 40rem;
+}
+.education-column .title {
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 2rem;
+}
+.education-column .education-box {
+  border-left: 0.2rem solid #00abf0;
+}
+.education-box .education-content {
+  position: relative;
+  padding-left: 2rem;
+}
+.education-box .education-content .content {
+  background-color: #112e42;
+}
+
+.education-box .education-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1.1rem;
+  width: 2rem;
+  height: 2rem;
+  background: #00abf0;
+  border-radius: 50%;
+}
+.education-content .content {
+  position: relative;
+  padding: 1.5rem;
+  border: 0.2rem solid #00abf0;
+  border-radius: 0.6rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.education-content .content .year {
+  font-size: 1.5rem;
+  color: #00abf0;
+  padding-bottom: 0.5rem;
+}
+.education-content .content .year {
+  padding-right: 0.5rem;
+}
+.education-content .content h3 {
+  font-size: 2rem;
+}
+.education-content .content p {
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
+}
+
+.skills {
+  min-height: auto;
+  padding-bottom: 7rem;
+  background: #081b29;
+}
+.skills-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-box .progress {
+  width: calc(25% - 10px);
+
+  text-align: center;
+}
+
+.skills-box .progress img {
+  width: 80px;
+  height: 80px;
+}
+.skills .skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.skills-row .skills-column {
+  flex: 1 1 40rem;
+}
+.skills-column .title {
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem;
+}
+div.skills-row {
+  margin-bottom: 20rem;
+}
+.skills-box .skills-content {
+  position: relative;
+  border: 0.2rem solid #00abf0;
+  border-radius: 0.6rem;
+  padding: 4rem 4rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.skills-content .progress {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-content .progress h3 {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.skills-content .progress h3 span {
+  color: #ededed;
+}
+.skills-content .progress .bar {
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #00abf0;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+.skills-content .progress .bar span {
+  display: block;
+  height: 100%;
+  border-radius: 0.3rem;
+  background-color: #00abf0;
+}
+
+.skills-box .row1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #112e42;
+}
+
+.skills-box .row2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+@keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 10rem 4% 2rem;
+  }
+  .home {
+    padding: 0 4%;
+  }
+}
+@media (max-width: 462px) {
+  .education {
+    padding: 10rem 4% 5rem 5%;
+  }
+}

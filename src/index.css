@@ -1,0 +1,25 @@
+body {
+  background: #081b29;
+  color: #ededed;
+}
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 991px) {
+  section {
+    padding: 10rem 4% 2rem;
+  }
+  .home {
+    padding: 0 4%;
+  }
+}
+@media (max-width: 520px) {
+  html {
+    font-size: 50%;
+  }
+}
