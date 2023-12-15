@@ -15,6 +15,7 @@
   "education2info": "High School Diploma in Business Management and Administration.",
   "experience": "Experience",
   "experience1": "Self-employed Computer Technical Service",
+  "present": "Present",
   "experience1info": "Providing specialized services in computer assembly and repair, as well as in the management and optimization of operating systems for optimal performance. Over two decades of experience delivering reliable technical solutions since 1998.",
   "experience2": "Local Government Official at the Municipality of Lanus.",
   "experience2info": "Planning, implementing, and overseeing efficient routes, comprehensive logistics management, and coordinating the home delivery of fiscal documents. Experienced in optimizing processes to ensure timely and effective delivery.",
@@ -32,5 +33,7 @@
   "number": "Mobile Number",
   "subject": "Email Subject",
   "message": "Your Message",
-  "submit": "Submit"
+  "submit": "Submit",
+  "emailsent": "Message sent",
+  "email-error": "Error sending"
 }

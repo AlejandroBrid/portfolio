@@ -23,7 +23,7 @@ export const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setSentMessage("Mensaje enviado");
+          setSentMessage(t("emailsent"));
           setTimeout(() => {
             setSentMessage(null);
           }, 2000);
@@ -31,6 +31,7 @@ export const Contact = () => {
         },
         (error) => {
           console.log(error.text);
+          setSentMessage(t("email-error"));
         }
       );
   };

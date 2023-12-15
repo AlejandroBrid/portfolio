@@ -14,7 +14,7 @@ export const About = () => {
       <section className="about" id="about">
         <h2 className="heading">{t("about")}</h2>
         <div className="about-img">
-          <img src="about2.jpg" alt="" />
+          <img src="about4.png" alt="" />
           <span className="circle-spin"></span>
         </div>
         <div className="about-content">
@@ -55,7 +55,7 @@ export const About = () => {
               <div className="education-content">
                 <div className="content">
                   <div className="year">
-                    <i className="bx bxs-calendar"></i>1998 - Present
+                    <i className="bx bxs-calendar"></i>1998 - {t("present")}
                   </div>
                   <h3>{t("experience1")}</h3>
                   <p>{t("experience1info")}</p>
@@ -64,7 +64,7 @@ export const About = () => {
               <div className="education-content">
                 <div className="content">
                   <div className="year">
-                    <i className="bx bxs-calendar"></i> 2018 - 2020
+                    <i className="bx bxs-calendar"></i> 2019 - 2021
                   </div>
                   <h3>{t("experience2")}</h3>
                   <p>{t("experience2info")}</p>
@@ -73,7 +73,7 @@ export const About = () => {
               <div className="education-content">
                 <div className="content">
                   <div className="year">
-                    <i className="bx bxs-calendar"></i> 2018 - 2020
+                    <i className="bx bxs-calendar"></i> 2004 - 2019
                   </div>
                   <h3>{t("experience3")}</h3>
                   <p>{t("experience3info")}</p>

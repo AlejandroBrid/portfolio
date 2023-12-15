@@ -24,6 +24,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.7;
 }
 .about-img img {
   width: 90%;

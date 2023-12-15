@@ -11,10 +11,11 @@
   "education": "Educación",
   "education1": "Desarrollador Web Full Stack - Hack A Boss",
   "education1info": "He completado con éxito un bootcamp de desarrollo web full-stack de 256 horas.",
-  "education2": "Completed Secondary Education",
+  "education2": "Educación secundaria completa",
   "education2info": "Certificado de Bachiller en Gestión y Administración de Empresas.",
   "experience": "Experiencia",
   "experience1": "Servicio Técnico de Ordenadores por cuenta propia",
+  "present": "Presente",
   "experience1info": "Ofreciendo servicios especializados en el ensamblaje y reparación de ordenadores, así como en la gestión y optimización de sistemas operativos para un rendimiento óptimo. Más de dos décadas de experiencia brindando soluciones técnicas confiables desde 1998.",
   "experience2": "Funcionario de ayuntamiento en la Municipalidad de Lanus",
   "experience2info": "Planificación, implementación y supervisión de rutas eficientes, gestión logística integral y coordinación de la distribución domiciliaria de documentos fiscales. Experiencia en optimizar procesos para garantizar una entrega oportuna y efectiva.",
@@ -32,5 +33,7 @@
   "number": "Teléfono",
   "subject": "Asunto",
   "message": "Mensaje",
-  "submit": "Enviar"
+  "submit": "Enviar",
+  "emailsent": "Mensaje enviado",
+  "email-error": "Hubo un error"
 }

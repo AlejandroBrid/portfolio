@@ -36,9 +36,7 @@ div.technologies {
   justify-content: center;
   gap: 10px;
 }
-div.tech-icon {
-  color: #00abf0;
-}
+
 .project-links a {
   font-size: 3rem;
   color: #ededed;

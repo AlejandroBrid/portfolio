@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem 9%;
@@ -8,6 +8,10 @@
 }
 .footer-text p {
   font-size: 1.6rem;
+}
+div.footer-iconTop {
+  position: absolute;
+  right: 9%;
 }
 .footer-iconTop a {
   position: relative;
@@ -42,6 +46,12 @@
 }
 .footer-iconTop a:hover i {
   color: #00abf0;
+}
+.footer-iconTop {
+  display: none;
+}
+.footer-iconTop.visible {
+  display: block;
 }
 @media (max-width: 991px) {
   .footer {

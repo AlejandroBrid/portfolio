@@ -27,7 +27,7 @@ function Header() {
     <>
       <header className="header">
         <NavLink to="/" className="logo" onClick={closeMenu}>
-          Alejandro
+          {"<Alejandro />"}
         </NavLink>
         <div
           className={isMenuOpen ? "bx bx-x" : "bx bx-menu"}

@@ -27,7 +27,9 @@ export const HomePage = () => {
           </div>
           <p>{t("intro")}</p>
           <div className="btn-box">
-            <a href="#">CV</a>
+            <a href="https://drive.google.com/file/d/1HcyuEtZeuNVRif5ZRX3KL1e3cRRMH4lB/view?usp=sharing">
+              CV
+            </a>
             <Link to="/contact">Let&apos;s Talk</Link>
           </div>
         </div>
