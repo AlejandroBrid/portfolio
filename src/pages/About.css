@@ -56,7 +56,7 @@ h2.heading {
 }
 .about-content p {
   font-size: 2rem;
-  margin: 2rem 10rem 3rem;
+  margin: 2rem 10rem 2rem;
 }
 .btn-box.btns {
   display: inline-block;
@@ -206,17 +206,11 @@ div.skills-row {
 
 .skills-box .row1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   background-color: #112e42;
 }
 
-.skills-box .row2 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
-}
 @keyframes aboutSpinner {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
@@ -234,5 +228,15 @@ div.skills-row {
 @media (max-width: 462px) {
   .education {
     padding: 10rem 4% 5rem 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-box .row1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #112e42;
+    padding: 5px;
   }
 }

@@ -7,7 +7,7 @@ section {
   align-items: center;
   padding: 0 9%;
   background: url(/public/bg3.png) no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 .home-content {
@@ -252,6 +252,34 @@ Hover:hover {
   75%,
   81% {
     opacity: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .home {
+    background-size: contain;
+    background-position: 1dvw;
+  }
+}
+@media (max-width: 1050px) {
+  .home {
+    background-position: 3dvw;
+  }
+}
+@media (max-width: 1026px) {
+  .home {
+    background-position: 4dvw;
+  }
+}
+@media (max-width: 930px) {
+  .home {
+    background-position: 5dvw;
+  }
+}
+@media (max-width: 880px) {
+  .home {
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 991px) {

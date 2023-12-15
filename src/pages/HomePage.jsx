@@ -30,7 +30,7 @@ export const HomePage = () => {
             <a href="https://drive.google.com/file/d/1HcyuEtZeuNVRif5ZRX3KL1e3cRRMH4lB/view?usp=sharing">
               CV
             </a>
-            <Link to="/contact">Let&apos;s Talk</Link>
+            <Link to="/contact">{t("lets-talk")}</Link>
           </div>
         </div>
         <div className="home-sci">
