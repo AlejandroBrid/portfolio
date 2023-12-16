@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-// Contact <span>Me</span>
+
 export const Contact = () => {
   const { t } = useTranslation();
   const form = useRef();
@@ -12,6 +12,16 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const userEmail = form.current.user_email.value;
+    if (!emailRegex.test(userEmail)) {
+      setSentMessage(t("invalid-email"));
+      setTimeout(() => {
+        setSentMessage(null);
+      }, 2000);
+      return;
+    }
 
     emailjs
       .sendForm(

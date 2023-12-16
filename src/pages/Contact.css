@@ -1,12 +1,8 @@
 footer {
   margin-top: auto;
-  height: 6.2vh; /* This will push the footer to the bottom */
-}
-input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
+  height: 6.2vh;
 }
 
-/* Para navegadores WebKit como Chrome y Safari */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
