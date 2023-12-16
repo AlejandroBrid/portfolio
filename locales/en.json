@@ -35,6 +35,7 @@
   "subject": "Email Subject",
   "message": "Your Message",
   "submit": "Submit",
+  "invalid-email": "Invalid Email",
   "emailsent": "Message sent",
   "email-error": "Error sending"
 }
