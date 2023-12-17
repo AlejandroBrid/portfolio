@@ -57,6 +57,7 @@ h2.heading {
 .about-content p {
   font-size: 2rem;
   margin: 2rem 10rem 2rem;
+  line-height: 1.5;
 }
 .btn-box.btns {
   display: inline-block;
@@ -206,9 +207,11 @@ div.skills-row {
 
 .skills-box .row1 {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   background-color: #112e42;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 @keyframes aboutSpinner {
