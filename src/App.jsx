@@ -1,4 +1,3 @@
-import { useHistory } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import { About } from "./pages/About";
@@ -8,29 +7,14 @@ import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
 
 function App() {
-  const history = useHistory();
-
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        {/* Para mantener el historial actualizado, navega manualmente a la siguiente ruta en lugar de simplemente renderizar la nueva ruta */}
         <Route path="/" element={<HomePage />} />
-        <Route
-          path="/about"
-          onEnter={() => history.push("/about")}
-          element={<About />}
-        />
-        <Route
-          path="/projects"
-          onEnter={() => history.push("/projects")}
-          element={<Projects />}
-        />
-        <Route
-          path="/contact"
-          onEnter={() => history.push("/contact")}
-          element={<Contact />}
-        />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
