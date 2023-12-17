@@ -6,7 +6,7 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url(/public/bg3.png) no-repeat;
+  background: url(/bg3.png) no-repeat;
   background-size: contain;
   background-position: center;
 }
@@ -58,13 +58,14 @@ section {
   font-size: 1.6rem;
   margin: 2rem 0 4rem;
   line-height: 1.3;
+  color: #ededed;
 }
 .home-content p::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 101%;
   height: 100%;
   background: #081b29;
   animation: showRight 1s ease forwards;
@@ -195,10 +196,9 @@ section {
   width: 45%;
   height: 100%;
   background: transparent;
-
-  transition: 3s;
+  transition: 5s;
   animation: manipActiveHover 0.1s forwards;
-  animation-delay: 4s;
+  animation-delay: 6s;
   pointer-events: none;
 }
 Hover:hover {
@@ -214,7 +214,7 @@ Hover:hover {
   height: 100%;
   background: #081b29;
   animation: showRight 1s ease forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
   z-index: 100;
 }
 @keyframes showRight {

@@ -228,6 +228,13 @@ div.skills-row {
     padding: 0 4%;
   }
 }
+
+@media (max-width: 760px) {
+  .about-content p {
+    margin: 2rem 2rem 2rem;
+  }
+}
+
 @media (max-width: 462px) {
   .education {
     padding: 10rem 4% 5rem 5%;
