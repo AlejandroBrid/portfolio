@@ -71,10 +71,10 @@ input::-webkit-inner-spin-button {
 .contact form .textarea-field textarea {
   resize: none;
 }
-.contact form .btn-box .btn {
+.contact form .btn-box-c .btn {
   cursor: pointer;
 }
-.btn-box {
+.btn-box-c {
   position: relative;
   display: flex;
   justify-content: center;
@@ -82,7 +82,7 @@ input::-webkit-inner-spin-button {
   height: 5rem;
 }
 
-.btn-box .btn {
+.btn-box-c .btn {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -100,10 +100,10 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
   transition: 0.5s;
 }
-.btn-box .btn:hover {
+.btn-box-c .btn:hover {
   color: #00abf0;
 }
-.btn-box .btn::before {
+.btn-box-c .btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -114,7 +114,7 @@ input::-webkit-inner-spin-button {
   z-index: -1;
   transition: 0.5s;
 }
-.btn-box .btn:hover::before {
+.btn-box-c .btn:hover::before {
   width: 100%;
 }
 
@@ -145,7 +145,7 @@ p.sent-message {
   p.sent-message {
     position: static;
   }
-  .btn-box {
+  .btn-box-c {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -153,13 +153,12 @@ p.sent-message {
     height: 15rem;
     flex-direction: column;
   }
-  .contact form .btn-box .btn {
+  .contact form .btn-box-c .btn {
     height: 5rem;
   }
   div.mail-status {
     display: flex;
     height: 3rem;
-
     width: 40rem;
     justify-content: center;
   }

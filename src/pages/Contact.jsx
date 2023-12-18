@@ -96,7 +96,7 @@ export const Contact = () => {
           </div>
           <div className="send-message">
             <div className="btn-box-container">
-              <div className="btn-box">
+              <div className="btn-box-c">
                 <button type="submit" value="Send" className="btn">
                   {t("submit")}
                 </button>
