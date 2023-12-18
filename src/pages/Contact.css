@@ -138,11 +138,29 @@ p.sent-message {
   }
 }
 @media (max-width: 1199px) {
+  div.mail-status {
+    display: flex;
+    align-items: center;
+  }
   p.sent-message {
-    position: absolute;
-    top: 3em;
-    right: 240px;
-    font-size: large;
-    color: red;
+    position: static;
+  }
+  .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15rem;
+    flex-direction: column;
+  }
+  .contact form .btn-box .btn {
+    height: 5rem;
+  }
+  div.mail-status {
+    display: flex;
+    height: 3rem;
+
+    width: 40rem;
+    justify-content: center;
   }
 }

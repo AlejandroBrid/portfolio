@@ -94,12 +94,16 @@ export const Contact = () => {
             ></textarea>
             <span className="focus"></span>
           </div>
-          <div className="btn-box-container">
-            <div className="btn-box">
-              <button type="submit" value="Send" className="btn">
-                {t("submit")}
-              </button>
-              {sentMessage && <p className="sent-message">{sentMessage}</p>}
+          <div className="send-message">
+            <div className="btn-box-container">
+              <div className="btn-box">
+                <button type="submit" value="Send" className="btn">
+                  {t("submit")}
+                </button>
+                <div className="mail-status">
+                  {sentMessage && <p className="sent-message">{sentMessage}</p>}
+                </div>
+              </div>
             </div>
           </div>
         </form>
