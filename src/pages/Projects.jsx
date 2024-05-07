@@ -56,6 +56,21 @@ const projectsData = [
     slideshowImages: ["/portfolio1.png", "/portfolio2.png", "/portfolio3.png"],
     imageSrc: "/portfolio1.png",
   },
+  {
+    id: 4,
+    title: "Comidas Argentinas",
+    description: "project4info",
+    technologies: [
+      <FaHtml5 key="html" />,
+      <IoLogoJavascript key="js" />,
+      <IoLogoCss3 key="css3" />,
+      <FaNode key="node" />,
+      <FaReact key="react" />,
+    ],
+    github: "https://github.com/AlejandroBrid/comidas-argentinas-front",
+    slideshowImages: ["/comidas4.png", "/comidas5.png", "/comidas6.png"],
+    imageSrc: "/comidas4.png",
+  },
 ];
 
 export const Projects = () => {

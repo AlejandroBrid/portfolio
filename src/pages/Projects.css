@@ -1,6 +1,7 @@
 .projects {
   min-height: 93.8vh;
   padding-bottom: 7rem;
+  padding: 15rem 3% 2rem;
 }
 h3.title {
   font-size: 3rem;
@@ -18,6 +19,8 @@ div.project-cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 15px;
+  margin-top: 6rem;
 }
 div.project-card {
   display: flex;

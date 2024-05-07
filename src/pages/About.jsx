@@ -14,7 +14,7 @@ export const About = () => {
       <section className="about" id="about">
         <h2 className="heading">{t("about")}</h2>
         <div className="about-img">
-          <img src="about4.png" alt="" />
+          <img src="about7.png" alt="" />
           <span className="circle-spin"></span>
         </div>
         <div className="about-content">
