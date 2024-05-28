@@ -53,8 +53,8 @@ const projectsData = [
     ],
     github: "https://github.com/AlejandroBrid/portfolio",
     deployLink: "/home",
-    slideshowImages: ["/portfolio1.png", "/portfolio2.png", "/portfolio3.png"],
-    imageSrc: "/portfolio1.png",
+    slideshowImages: ["/portfolio11.png", "/portfolio2.png", "/portfolio3.png"],
+    imageSrc: "/portfolio11.png",
   },
   {
     id: 4,

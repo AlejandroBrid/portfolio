@@ -34,13 +34,26 @@ export const HomePage = () => {
           </div>
         </div>
         <div className="home-sci">
-          <a href="https://www.linkedin.com/in/alejandro-brid/">
+          <a
+            href="https://www.linkedin.com/in/alejandrobrid/
+            "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="bx bxl-linkedin"></i>
           </a>
-          <a href="https://github.com/AlejandroBrid?tab=repositories">
+          <a
+            href="https://github.com/AlejandroBrid?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="bx bxl-github"></i>
           </a>
-          <a href="https://gitlab.com/alejandrojbrid">
+          <a
+            href="https://gitlab.com/alejandrojbrid"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="bx bxl-gitlab"></i>
           </a>
         </div>
